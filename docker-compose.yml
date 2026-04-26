@@ -3,9 +3,7 @@ services:
     build: .
     container_name: bookstyle_app
     ports:
-      - "8080:80"
-    volumes:
-      - .:/var/www/html
+      - "80:80"
     depends_on:
       - db
 
