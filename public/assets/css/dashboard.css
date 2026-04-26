@@ -1,0 +1,246 @@
+/* Reset & base layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Page container (wraps everything except fixed sidebar) */
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Typography */
+.dashboard-content h1 {
+    font-size: 2.2rem;
+}
+
+.dashboard-content p {
+    font-size: 1.5rem;
+}
+
+/* Layout containing sidebar and content */
+.dashboard-layout {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #1f1f1f;
+    color: #fff;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #f0c674;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav ul li a {
+    color: #ccc;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+}
+
+.sidebar-nav ul li a:hover {
+    color: #f0c674;
+}
+
+/* Header section */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    color: #1f2937;
+}
+
+.dashboard-header .subtext {
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+/* Widgets */
+.dashboard-widgets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.widget {
+    background-color: #f3f4f6;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.widget h2 {
+    font-size: 1.2rem;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.widget p {
+    font-size: 1.3rem;
+    color: #111827;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Removed table-specific styles to use global styles */
+
+/* Button Styles */
+.btn-add {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-edit {
+    color: #2563eb;
+}
+
+.btn-edit:hover {
+    text-decoration: underline;
+}
+
+.btn-delete {
+    color: #dc2626;
+}
+
+.btn-delete:hover {
+    text-decoration: underline;
+}
+
+/* Bookings table */
+.bookings-table {
+    width: 80%;
+    margin: 1.5rem auto; /* This centers the table horizontally */
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+/* Table Cell Padding and Alignment */
+.bookings-table th, .bookings-table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.bookings-table th {
+    background-color: #f3f4f6;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.booking-actions form {
+    display: inline-block;
+    margin: 0 0.25rem;
+}
+
+.user-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.user-btn.amend {
+    background-color: #2563eb;
+    color: white;
+}
+
+.user-btn.amend:hover {
+    background-color: #1d4ed8;
+}
+
+.user-btn.cancel {
+    background-color: #dc2626;
+    color: white;
+}
+
+.user-btn.cancel:hover {
+    background-color: #b91c1c;
+}
+
+.no-booking-message {
+    text-align: center;
+    font-style: italic;
+    color: #6b7280;
+}
+
+

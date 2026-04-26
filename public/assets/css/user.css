@@ -1,0 +1,65 @@
+/* Style for the Upcoming Booking Section */
+.booking-details {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.booking-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.booking-details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.booking-details strong {
+    color: #333;
+}
+
+/* Style for the buttons (Amend, Cancel) */
+.booking-actions {
+    margin-top: 20px;
+}
+
+.booking-actions form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.user-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-btn.amend {
+    background-color: #4CAF50; /* Green for Amend */
+}
+
+.user-btn.cancel {
+    background-color: #FF6347; /* Red for Cancel */
+}
+
+.user-btn:hover {
+    opacity: 0.8;
+}
+
+.booking-actions .user-btn.amend:hover {
+    background-color: #45a049;
+}
+
+.booking-actions .user-btn.cancel:hover {
+    background-color: #e55347;
+}

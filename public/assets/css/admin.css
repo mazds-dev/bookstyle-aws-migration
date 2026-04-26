@@ -1,0 +1,141 @@
+/**************** General Layout ****************/
+body.admin-page {
+    font-family: 'Poppins', sans-serif;
+}
+
+/**************** Admin Buttons ****************/
+.admin-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.2s ease;
+    color: white;
+}
+.admin-btn.save {
+    background-color: #1474c3;
+}
+
+.admin-btn.edit {
+    background-color: #2bae2f;
+}
+
+.admin-btn.delete {
+    background-color: #c5352b;
+}
+
+.admin-btn.add {
+    background-color: #1474c3;
+}
+
+.admin-btn:hover {
+    opacity: 0.9;
+}
+
+/**************** Form and Table Input Styles ****************/
+.admin-input {
+    width: 90%;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.admin-input:focus {
+    outline: none;
+    border-color: #1474c3;
+    background-color: #fff;
+}
+
+/**************** Form and Table Button Styles ****************/
+.table-style button,
+.form-table button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table-style button:hover,
+.form-table button:hover {
+    background-color: #45a049;
+}
+
+/**************** Form Table Styles ****************/
+.form-and-table-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-form-section {
+    margin-top: 2rem;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-table th {
+    background-color: #f2f2f2;
+    font-size: 1.2rem;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-table td {
+    padding: 12px;
+}
+
+/* Optional: You can add a container with scroll for large tables if required */
+body.admin-page .services-table-wrapper {
+    width: 100%;
+    overflow-x: auto;  /* Allow horizontal scrolling if needed */
+}
+
+/* Removed redundant services table-specific styles */
+body.admin-page .services-table {
+    width: 100%;
+    max-width: none; /* No max-width */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Removed header hover styling */
+body.admin-page .services-table thead th:hover {
+    background-color: #2c3e50 !important;
+}
+
+/* Removed column width handling */
+body.admin-page .services-table td {
+    word-wrap: break-word;
+    max-width: 400px; /* For wider columns */
+}
+
+/* You can keep any specific form-row or content row styles if needed */
+body.admin-page .form-row td {
+    background-color: #ecf0f1;
+}

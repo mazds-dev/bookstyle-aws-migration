@@ -1,0 +1,125 @@
+/* Authorisation section */
+
+body.auth-body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('/assets/images/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Changed from flex-start to center */
+    height: 100vh;
+    margin: 0;
+    padding: 0;  /* Removed padding-top */
+}
+
+
+.auth-container {
+    background-color: rgb(255, 255, 255);  /* Adjust transparency */
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;  /* Prevent it from getting too wide */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);  /* Optional: Glassmorphism effect */
+    position: relative;
+    z-index: 1;
+    
+}
+
+.auth-logo img {
+    max-width: 120px;
+    margin: 0 auto 1rem;
+    display: block;
+    opacity: 0.9;
+}
+
+.auth-header h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+.auth-header p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Adds vertical spacing between form elements */
+    margin-top: 1rem;
+}
+
+.auth-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.auth-form button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+
+.auth-form button:hover {
+    background-color: #444;
+}
+
+.auth-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #c0392b;
+    background: #f9d6d5;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+}
+.close-btn:hover {
+    color: #111;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+

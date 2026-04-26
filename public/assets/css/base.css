@@ -1,0 +1,25 @@
+/* Global body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* Light background for clarity */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding-top: 60px; /* Make room for sticky header */
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    color: #111827; /* Dark gray for headings */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #f2ac08; /* Gold color for hover effects */
+}

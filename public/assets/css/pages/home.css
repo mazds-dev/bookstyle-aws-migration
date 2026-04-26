@@ -1,0 +1,68 @@
+/* Hero Section */
+.hero {
+    background-image: url('/assets/images/hero-bg.jpg'); /* Strong image background */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff; /* Light text for readability */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ddd; /* Slightly muted text */
+}
+
+.hero .cta-button {
+    background-color: #f2ac08; /* Bold gold button */
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #111827; /* Dark text for contrast */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #111827; /* Dark background on hover */
+    color: #f2ac08; /* Gold text */
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.services .service {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.services .service:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.services .service h3 {
+    color: #111827; /* Dark headings */
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.services .service p {
+    color: #777; /* Muted text for descriptions */
+}

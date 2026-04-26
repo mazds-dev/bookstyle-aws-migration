@@ -1,0 +1,95 @@
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: auto;
+  background-image: url('/assets/images/footer-texture.png'); /* optional texture */
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-contact, .footer-links, .footer-social, .footer-user-resources {
+  flex: 1 1 250px;
+}
+
+.footer h3 {
+  margin-bottom: 0.5rem;
+  color: #f2ac08bb;
+  font-size: 1.2rem;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-links a i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 0.2rem 0;
+}
+
+.footer-bottom p:last-child {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.footer-bottom a {
+  color: #44b71a;
+}
+
+.footer-bottom a:hover {
+  color: #44ff00;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-contact, .footer-links, .footer-social, .footer-user-resources {
+    width: 100%;
+  }
+}

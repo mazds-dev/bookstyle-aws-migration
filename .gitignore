@@ -1,0 +1,10 @@
+.env
+.env.*
+!/.env.example
+
+vendor/
+
+docker/mysql/data/
+
+*.sql
+!docker/mysql/init/barbershop_services.sql

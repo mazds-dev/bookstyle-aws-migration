@@ -1,0 +1,39 @@
+/* Hero Section */
+.hero {
+    background-image: url('/assets/images/hero_barbershop.jpg'), linear-gradient(to bottom, #222, rgba(34, 34, 34, 0.6)); /* Add overlay gradient */
+    background-size: cover;
+    background-position: center;
+    color: rgb(190, 106, 106);
+    text-align: center;
+    padding: 8rem 2rem 6rem; /* top padding = header height */
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+/* Hero Title */
+.hero h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Book Now Button */
+.hero #bookNowBtn {
+    background-color: #f2ac08;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #111827;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero #bookNowBtn:hover {
+    background-color: #111827;
+    color: #f2ac08;
+}
